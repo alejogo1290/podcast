@@ -1,0 +1,559 @@
+* {
+  box-sizing: border-box;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #060A24;
+  font-size: 16px;
+}
+ 
+body {
+  margin: 0;
+  position: relative;
+}
+
+iframe {
+  width: 100%;
+  height: 232px;
+  border: 0;
+}
+
+.pad {
+  padding-right: 100px;
+  padding-left: 100px;
+}
+.cont {
+  padding-right: 100px;
+  padding-left: 100px;
+  
+}
+
+
+.titles {
+  font-size: 48px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+}
+s{
+  font-size: 48px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.buttons {
+  padding: 16px 59px;
+  background-image:linear-gradient(#00F0B8, #00F0B8);
+  text-decoration: none;
+  font-size: 18px;
+  }
+
+.buttons:hover {
+  background-image: linear-gradient(to left,#0000FE, #00F0B8);
+  color: white;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+/*===NAVBAR===*/
+
+.navbar {
+  padding: 22px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.LogoCont {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+}
+
+.NavbarMenu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.NavbarBurger {
+  display: none;
+  font-size: 0px;
+}
+
+#ButtonMenu {
+  display: none;
+}
+
+.NavbarItems {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.NavbarItems li {
+  text-align: start;
+  list-style: none;
+  padding: 0px 20px;
+}
+
+.NavbarItems a {
+  text-decoration: none;
+}
+
+.NavbarItems a:hover {
+  color: #00F3BB;
+  text-decoration: line-through;
+}
+
+.NavbarItems a:active {
+  color: rgba(6,10,36,0.56);
+  text-decoration: line-through;
+}
+
+.ButtonMenuBars {
+  display: block;
+}
+
+.ButtonMenuClose {
+  display: none;
+}
+
+/*===HEADER===*/
+
+.HeaderCont {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.headerTitle {
+  font-size: 64px;
+  margin-bottom: 0;
+}
+
+
+.HeaderP1 {
+  width: 628px;
+  margin-bottom: 56px;
+  line-height: 24px;
+}
+.HeaderP2{
+  display: none;
+  width: 628px;
+  margin-bottom: 56px;
+  line-height: 24px;
+}
+.bluedot {
+  color: #0000EC;
+}
+
+/*===EPISODIOS===*/
+
+.PodcastCont {
+  
+  position: relative;
+  z-index: 1;
+}
+
+.PodcastCont .cont {
+  position: relative;
+  z-index: 2;
+}
+
+.PodcastBack {
+  position: absolute;
+  background-image: linear-gradient(to left,#0000FF, #0000A3);
+  top: -80px;
+  bottom: -220px;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  transform: skew(0, -6deg);
+}
+
+.PodcastTitle {
+  color: white;
+  padding-top: 40px;
+  padding-left: 200px;
+ }
+
+.PodcastEpisodios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 72px;
+  grid-row-gap: 72px;
+  padding-left: 100px;
+  padding-right: 100px;
+  
+
+}
+
+/*===PHONE===*/
+
+.PhoneCont {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 64px 150px;
+  z-index: 2;
+}
+
+.PhoneImage img {
+  width: 457.6px;
+}
+
+.PhoneText {
+  width: 464px;
+  margin-left: 62.4px;
+}
+
+/*.phone-title {
+  color: #060A24;
+}
+*/
+.PhoneP{
+  line-height: 24px;
+}
+
+/*===INVITADOS===*/
+
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+
+}   
+
+.images img {
+  width: calc(100% / 3);
+}
+
+/*===ICONS===*/
+
+.IconsCont {
+  margin-bottom: 0;
+}
+
+.AllIcons {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.IconText {
+  width: 220px;
+  font-size: 24px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+  
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-left: 10px; 
+}
+
+.icon img {
+  width: 104px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*===NOVEDADES===*/
+
+.NovedadesCont {
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 180px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.NovedadesBack{
+  position: absolute;
+  background-image: linear-gradient(to left,#0000FF, #0000A3);
+  top: 80px;
+  bottom: -120px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transform: skew(0, -6deg);
+}
+
+.novedades {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.NovedadesTitle {
+  color: #FFFFFF;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NovedadesButton {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/*===FOOTER===*/
+
+.FooterCont {
+  padding: 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  background: #FFFFFF;
+}
+
+.MarcaCont {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.FooterItems {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.FooterItems li {
+  text-align: start;
+  list-style: none;
+  padding: 0px 20px;
+}
+
+.FooterItems a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.FooterItems i {
+  font-size: 18px;
+}
+/*===RESPONSIVE===*/
+
+@media (max-width:320px) {
+  
+  .pad {
+      padding-right: 0;
+      padding-left: 0;
+  }
+
+  .titles {
+      font-size: 36px;
+  }
+  s{
+    font-size: 36px;
+  }
+  .buttons {
+      display: block;
+      text-align: center;
+  }
+  .cont{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /*===NAVBAR===*/
+  .ContNavbar{
+    padding: 0;
+  }
+  .NavbarBurger {
+      display: block;
+      padding-right: 16px;
+      font-size: 18px;
+  }
+
+  .NavbarItems {
+    display: none;
+    position: absolute;
+    background: blue;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    width: 100%;
+  }
+
+  #ButtonMenu:checked ~ .NavbarItems {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+  }
+
+  #ButtonMenu:checked ~ .ButtonMenuBars {
+      display: none;
+  }
+
+  #ButtonMenu:checked ~ .ButtonMenuClose {
+      display: block;
+  }
+
+
+  .NavbarItems li {
+      padding: 10px;
+  }
+
+  .NavbarItems a {
+      color: #FFFFFF;
+  }
+  .LogoCont{
+    padding-left: 16px;
+  }
+  .logo {
+      width: 24px;
+      height: 24px;
+  }
+      
+  /*===HEADER===*/
+  .HeaderCont{
+    padding-top: 0px;
+  }
+  .HeaderP2 {
+    display: block;  
+    width: 288px;
+  }
+  .HeaderP1{
+    display: none;
+  }
+  .HeaderCont {
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+
+  .headerTitle {
+      margin-top: 0;
+  }
+
+  /*===IMAGES===*/
+
+  .images {
+      flex-direction: column;
+  }
+
+  .images img {
+      width: 100%;
+  }
+
+  /*===PODCAST===*/
+
+  .PodcastTitle {
+      font-size: 36px;
+      padding-top: 20px;
+      padding-left: 16px;
+  }
+
+  .PodcastEpisodios {
+      grid-template-columns: 1fr;
+      grid-row-gap: 11px;
+      padding-left: 11px;
+      padding-right: 11px;
+  }
+
+  .PodcastBack {
+      top: -30px;
+  }
+
+  /*===PHONE===*/
+
+  .PhoneCont {
+      flex-direction: column;
+      padding: 0;
+  }
+
+  .PhoneImage img {
+      width: 100%;
+  }
+  
+  .PhoneText {
+    width: auto;
+    margin: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .PhoneTitle {
+      font-size: 36px;
+  }
+
+  .PhoneP {
+      font-size: 14px;
+  }
+
+  /*ICONS*/
+
+  .IconsCont {
+      margin-bottom: 0;
+  }
+
+  .AllIcons {
+      flex-direction: column;
+  }
+
+  .iconsTitle {
+      width: 288px;
+  }
+
+  .IconText {
+      width: 288px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  .icon {
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+
+  /*NOVEDADES*/
+
+  .NovedadesCont {
+      width: 100%;
+      padding-top: 40px;
+      padding-bottom: 60px ;
+      padding-left: 16px;
+      padding-right: 16px;
+  }
+
+  .NovedadesBack {
+      top: 20px;
+      bottom: -120px;
+  }
+  
+  .novedadesTitle {
+      width: 288px;
+      font-size: 36px;
+  }
+
+  /*FOOTER*/
+
+  .FooterCont {
+      top: 0;
+      bottom: -20px;
+      flex-direction: column;
+  }
+
+  .MarcaCont {
+      margin-left: 0;
+      margin-right: 0;
+      padding-bottom: 10px;
+      font-size: 14px;
+      justify-content: center;
+  }
+}

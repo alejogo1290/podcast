@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/09044e3994.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="cont ContNavbar">
+        <nav class="navbar">
+            <div class="LogoCont">
+                <img class="logo" src="images/logo.svg" alt="bluedot">
+            </div>
+            <div class="NavbarMenu">
+                <input type="checkbox" id="ButtonMenu" class="ButtonMenu">
+                <label for="ButtonMenu" class="ButtonMenuBars"><i class="fas fa-bars NavbarBurger"></i></label>
+                <label for="ButtonMenu" class="ButtonMenuClose"><i class="fas fa-times NavbarBurger"></i></label>
+                <ul class="NavbarItems">
+                    <li><a href="#episodios">EPISODIOS</a></li>
+                    <li><a href="#deDonde">NOSOTROS</a></li>
+                    <li><a href="#invitados">ENTREVISTAS</a></li>
+                    <li><a href="#temas">TÓPICOS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="cont">
+        <header class="HeaderCont pad">
+            <h1 class="HeaderTitle titles">Hello <s>world</s> pale blue dot<span class="bluedot">.</span></h1>
+            <p class="HeaderP1">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <p class="HeaderP2">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <a class="buttons" href="#temas">CONOCÉ MÁS</a>
+        </header>
+    </div>
+        <section class="PodcastCont">
+            <div class="PodcastBack"></div>
+            <div class="Cont">
+                <h2 class="PodcastTitle titles pad" id="episodios">Episodios</h2>
+                <div class="PodcastEpisodios">
+                    <iframe class="episodios" src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media"></iframe>
+                    <iframe class="episodios" src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" allow="encrypted-media"></iframe>
+                    <iframe class="episodios" src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" allow="encrypted-media"></iframe>
+                    <iframe class="episodios" src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" allow="encrypted-media"></iframe>
+                </div> 
+            </div>
+        </section>
+        <section class="PhoneCont">
+            <div  class="PhoneImage">
+                <img src="images/phone.png" alt="phone">
+            </div>
+                <div class="PhoneText">
+                    <h3 class="PhoneTitle titles" id="deDonde">De dónde venimos</h3>
+                    <p class="PhoneP">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the  Universe, are challenged by this point of pale light.</p>
+                    <p class="PhoneP">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+                </div>
+        </section>
+        <section class="ImagesCont">
+            <div class="cont">
+                <h3 class="ImagesTitle titles pad" id="invitados">Invitadas/os estelares</h3>
+            </div>
+            <div class="images">
+                <img src="images/grace-hopper.png" alt="Grace Hooper">
+                <img src="images/Katie-Bouman.png" alt="Katie Bouman">
+                <img src="images/Margaret_Hamilton.png" alt="Margaret Hamilton">
+                <img src="/images/ERA.png" alt="An E.R.A.Univac 1103 computer in the 1950s">
+                <img src="images/Eniac.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
+                <img src="images/susan-kare.png" alt="Susan Kare">
+            </div>
+        </section>
+        <section class="IconsCont">
+            <div class="cont">
+                <h2 class="IconsTitle titles pad" id="temas">Algunos de nuestros temas</h2>
+                <div class="AllIcons">
+                    <div class="icon">
+                        <img src="images/icon1.svg" alt="Trabajo Remoto">
+                        <h3 class="IconText">Trabajo Remoto</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="images/icon2.svg" alt="Repensando la programación">
+                        <h3 class="IconText">Repensando la programación</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="images/icon3.svg" alt="Bases del código">
+                        <h3 class="IconText">Bases del código</h3>
+                    </div>
+                    <div class="icon">
+                        <img src="images/icon4.svg" alt="Seguridad Informática">
+                        <h3 class="IconText">Seguridad informática</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="NovedadesCont">
+            <div class="NovedadesBack"></div>
+            <div class="novedades">
+                <h2 class="NovedadesTitle titles">¿Querés las últimas novedades?</h2>
+                <a class="NovedadesButton buttons" href="#episodios">ESCUCHÁ LOS EPISODIOS</a>
+            </div>        
+        </section>
+      <div class="cont">
+        <footer class="FooterCont">
+            <div class="MarcaCont">
+                <p class="marca">© 2019— Hello blue pale dot </p>
+            </div>
+            <ul class="FooterItems">
+                <li><a href="https://www.spotify.com" target="_blank"><i class="fab fa-spotify"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" ></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter" ></i></a></li>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook" ></i></a></li>
+                <li><a href="https://www.telegram.com" target="_blank"><i class="fab fa-telegram" ></i></a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
